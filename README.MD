@@ -1,5 +1,8 @@
 Big Wheel Framework Example
 ==============================
+BigWheel is an unopinionated, minimalist frontend framework that manages application state.
+This repo is an example of it in action.
+
 
 Dependency
 ------------------------------
