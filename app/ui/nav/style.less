@@ -1,0 +1,24 @@
+#main-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  z-index: 100;
+
+  &.issues{
+    .main-nav-link{ color: #ff5f29; }
+  }
+  &.docs{
+    .main-nav-link{ color: #564ab1; }
+  }
+}
+
+.main-nav-link{
+  padding: 0 10px;
+  line-height: 50px;
+  color: #00aefb;
+  text-decoration: none;
+}
