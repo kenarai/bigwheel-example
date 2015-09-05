@@ -1,7 +1,6 @@
 var fs = require( 'fs' );
 var select = require('dom-select');
 var HBSPlugin = require('../../com/plugins/HBSPlugin');
-var bigwheel = require('bigwheel');
 var isInitialized = false;
 var elementClass = require('element-class');
 

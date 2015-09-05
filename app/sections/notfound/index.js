@@ -5,13 +5,13 @@ var HBSPlugin = require('../../com/plugins/HBSPlugin');
 var animate = require( 'gsap-promise' );
 
 
-var IssuesPage = {
+var NoPage = {
   init: function(req, done){
     var data = {
-      icon: fs.readFileSync('app/assets/issues.svg','utf8'),
-      copy: 'Log issues here: <br> <a href="https://github.com/bigwheel-framework/bigwheel/issues">https://github.com/bigwheel-framework/bigwheel/issues</a>'
+      icon: fs.readFileSync('app/assets/notfound.svg','utf8'),
+      copy: 'Page Not Found'
     };
-    this.dom = HBSPlugin(fs.readFileSync('app/sections/issues/index.hbs','utf8'), data);
+    this.dom = HBSPlugin(fs.readFileSync('app/sections/notfound/index.hbs','utf8'), data);
     this.icon = select('.icon', this.dom);
     this.copy = select('.copy', this.dom);
 
@@ -48,4 +48,4 @@ var IssuesPage = {
   }
 };
 
-module.exports = IssuesPage;
+module.exports = NoPage;
