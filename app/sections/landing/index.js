@@ -8,7 +8,7 @@ var LandingPage = {
   init: function(req, done){
     var data = {
       icon: fs.readFileSync('app/assets/circle.svg','utf8'),
-      copy: 'Bigwheel is an unopinionated, minimalist framework which handles frontend application state. It can be used to organize your application into "sections"/pages which are brought in by routes. Animation is a first class citizen and is accounted for when managing application states. bigwheel does not conform to a specific render engine framework so a project which is based on the DOM, WebGL, Canvas2D, SVG, or even Console applications can be built using bigwheel.'
+      copy: 'Bigwheel is an unopinionated, minimalist framework which handles frontend application state.<br> It can be used to organize your application into "sections"/pages which are brought in by routes.'
     };
     this.dom = HBSPlugin(fs.readFileSync('app/sections/landing/index.hbs','utf8'), data);
 
